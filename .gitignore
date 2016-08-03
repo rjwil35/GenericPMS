@@ -10,7 +10,8 @@ target/
 
 # Package Files #
 *.jar
-*.war
+#Comment out To enable auto Docker builds 
+#*.war
 *.ear
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
