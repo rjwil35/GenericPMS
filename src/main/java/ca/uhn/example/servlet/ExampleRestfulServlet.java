@@ -5,6 +5,7 @@ import java.util.List;
 
 import ca.uhn.example.provider.OrganizationResourceProvider;
 import ca.uhn.example.provider.PatientResourceProvider;
+import ca.uhn.example.provider.CompositionResourceProvider;
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.narrative.DefaultThymeleafNarrativeGenerator;
 import ca.uhn.fhir.narrative.INarrativeGenerator;
@@ -39,6 +40,7 @@ public class ExampleRestfulServlet extends RestfulServer {
 		List<IResourceProvider> providers = new ArrayList<IResourceProvider>();
 		providers.add(new PatientResourceProvider());
 		providers.add(new OrganizationResourceProvider());
+		providers.add(new CompositionResourceProvider());
 		setResourceProviders(providers);
 		
 		/*
